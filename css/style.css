@@ -1,10 +1,10 @@
-#priceright {
+/* #priceright {
     align-items: center;
-}
+} */
 .amongus{
     align-items: center;
 }
-.img{
+.card{
     height: 30vh;
     width: 20vw;
     background-color: #ddcbb5;
@@ -20,4 +20,7 @@
     font-size: 70%;
     margin: 1rem;
     padding: 1rem;
+}
+.img{
+    size: 50%;
 }

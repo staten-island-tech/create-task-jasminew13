@@ -1,5 +1,5 @@
 import '../css/style.css'
-import { DOMselectors } from './dom';
+//import { DOMselectors } from './dom';
 
 const URL = `https://dummyjson.com/products`
 
@@ -10,16 +10,19 @@ const URL = `https://dummyjson.com/products`
     console.log("Avenues", avenues)
     clearFields();
   
-    if (searchingvalue.length === 0){
+    if (priceright.length === 0){
       DOMselectors.container.insertAdjacentHTML('beforebegin', `<h2> no open streets for ${searchingvalue}</h2>`);
     } else {
       add(avenues);
     }
-  }  let idk = function (arr){
+  }*/  
+  
+  let idk = function (arr){
     for (let i = 1; i < arr.length; i++){
-        if ()
+        if (arr[i] > arr[i-1]);
     }
-  } */
+  } 
+  
   async function getData(){
     try {
         const response = await fetch(URL);
@@ -30,12 +33,13 @@ const URL = `https://dummyjson.com/products`
         add(newimg)
   
   
-      const guesspri = document.getElementById("priceright");
+      const guesspri = document.getElementById("submitting");
       guesspri.addEventListener("click", function() {
       console.log("clickedd");
+
       })
   return newimg;
-    } catch (newimg) {
+    } catch (error) {
         console.log(error,"uh oh");
     }
 }
