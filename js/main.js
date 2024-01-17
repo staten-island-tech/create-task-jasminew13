@@ -22,7 +22,12 @@ const URL = `https://dummyjson.com/products`
         if (arr[i] > arr[i-1]);
     }
   } 
-  
+  function add(stuff){
+    stuff.forEach(a => {
+            DOMselectors.container.insertAdjacentHTML("beforeend", `
+            <div class="card">
+    <p class="itemimage"><img src="${a.thumbnail}" alt=""></p></div>`)}); 
+    }
   async function getData(){
     try {
         const response = await fetch(URL);
@@ -31,6 +36,7 @@ const URL = `https://dummyjson.com/products`
         }
         const newimg = await response.json();
         add(newimg)
+        add(stuff)
   
   
       const guesspri = document.getElementById("submitting");
