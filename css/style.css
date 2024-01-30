@@ -2,8 +2,10 @@
 /* #priceright {
     align-items: center;
 } */
-.amongus{
+.amongus, #priceright{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 .card{
     height: 30vh;

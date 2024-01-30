@@ -16,12 +16,44 @@ const URL = `https://dummyjson.com/products`
       add(avenues);
     }
   }*/  
-  
-  let idk = function (arr){
+function addproduct(e){
+let data = URL.
+  DOMselectors.container.insertAdjacentHTML('beforebegin', `<div class="card">
+<p class="itemimage"><img src="${e.image}" alt=""></p>
+</div>`)
+}
+async function getData(){
+  try {
+      const response = await fetch(URL);
+      if (response.status != 200) {
+          throw new Error (response.statusText);
+      }
+      const newcards = await response.json();
+      add(newcards)
+
+return newcards;
+  } catch (error) {
+      console.log(error,"uh oh");
+  }
+}
+let base = card.price
+function priceisright(p) {
+  let result;
+  if (p > base) {
+    result = 'u win!';
+  } else {
+    result = 'u lose :(';
+  }
+  return result;
+}
+priceisright()
+
+
+/*   let idk = function (arr){
     for (let i = 1; i < arr.length; i++){
         if (arr[i] > arr[i-1]);
     }
-  } 
+  }  */
   function add(stuff){
     stuff.forEach(a => {
             DOMselectors.container.insertAdjacentHTML("beforeend", `
