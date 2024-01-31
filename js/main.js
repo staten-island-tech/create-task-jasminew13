@@ -18,9 +18,9 @@ const URL = `https://dummyjson.com/products`
    }
  }*/ 
 function add(e){
-let data = URL.
  DOMselectors.container.insertAdjacentHTML('beforebegin', `<div class="card">
-<p class="itemimage"><img src="${e.image}" alt=""></p>
+<p class="itemimage">
+<img src="${e.image}" alt="${e.title}"></p>
 </div>`)
 }
 async function getData(){
