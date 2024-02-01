@@ -1,9 +1,11 @@
 
-/* #priceright {
+#priceright {
     align-items: center;
-} */
+    font-size: 30px;
+} 
 .amongus{
     align-items: center;
+    align-content: center;
 }
 .card{
     height: 30vh;
@@ -24,4 +26,7 @@
 }
 .img{
     size: 50%;
+}
+#button{
+    background-color: #80775e;
 }

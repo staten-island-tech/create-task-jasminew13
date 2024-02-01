@@ -1,22 +1,11 @@
-import '../css/style.css'
-import { DOMselectors } from './dom'
+const DOMselectors = {
+  img: document.querySelector(".itemimg"),
+  container: document.querySelector(".container")
 
+}
 
 const URL = `https://dummyjson.com/products`
 
-
-/* function filtering (newcards){
-   const searchingvalue = document.getElementById("bsearch").value.trim();
-   console.log("Searching Value", searchingvalue);
-   const avenues = newcards.filter((newcard) => newcard.appronstre.includes(searchingvalue));
-   console.log("Avenues", avenues)
-   clearFields();
-    if (priceright.length === 0){
-     DOMselectors.container.insertAdjacentHTML('beforebegin', `<h2> no open streets for ${searchingvalue}</h2>`);
-   } else {
-     add(avenues);
-   }
- }*/ 
 function add(e){
  DOMselectors.container.insertAdjacentHTML('beforebegin', `<div class="card">
 <p class="itemimage">
@@ -31,13 +20,15 @@ async function getData(){
      }
      const newcards = await response.json();
      add(newcards)
-let base = newcards.price
-function priceisright(p) {
+
+function priceisright() {
+ let base = newcards.price;
  let result;
- if (p > base) {
-   result = 'u win!';
+ let omgvalue = priceright.value;
+ if (omgvalue > base) {
+   result = 'u lose';
  } else {
-   result = 'u lose :(';
+   result = 'u win !';
  }
  return result;
 }
@@ -51,9 +42,21 @@ return newcards;
 
 
 /*   let idk = function (arr){
-   for (let i = 1; i < arr.length; i++){
+   for (let i = 0; i < arr.length; i++){
        if (arr[i] > arr[i-1]);
    }
  }  */
 getData(URL)
 
+/* function filtering (newcards){
+   const searchingvalue = document.getElementById("bsearch").value.trim();
+   console.log("Searching Value", searchingvalue);
+   const avenues = newcards.filter((newcard) => newcard.appronstre.includes(searchingvalue));
+   console.log("Avenues", avenues)
+   clearFields();
+    if (priceright.length === 0){
+     DOMselectors.container.insertAdjacentHTML('beforebegin', `<h2> no open streets for ${searchingvalue}</h2>`);
+   } else {
+     add(avenues);
+   }
+ }*/ 
