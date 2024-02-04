@@ -1,5 +1,5 @@
 
-/* #priceright {
+#priceright {
     align-items: center;
 } */
 .amongus, #priceright{
@@ -26,4 +26,7 @@
 }
 .img{
     size: 50%;
+}
+#button{
+    background-color: #80775e;
 }
