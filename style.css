@@ -1,0 +1,42 @@
+
+.amongus, #priceright, .form1, #submitting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.form1{
+    size: 30vh;
+}
+.card{
+    height: 50vh;
+    width: 35vw;
+    background-color: #ddcbb5;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px #80775e;
+    flex-grow: 3;
+    flex-shrink: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+.itemimage{
+    height: 45vh;
+    width: 30vw;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+#button{
+    background-color: #80775e;
+}
+.result{
+    align-items: center;
+}
