@@ -7,10 +7,10 @@ const products = [
     {
         item: "Luxury plane",
         price: 10000000,
-        img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsiennacharles.com%2Fmagazine%2Fprivate-aviation%2Fluxury-private-plane-design%2F&psig=AOvVaw0-ykgHPjenShjx5gucGrQS&ust=1707336401799000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCODcy-_Bl4QDFQAAAAAdAAAAABAE",
+        img: "https://api.siennacharles.com/images/2021/05/11/private-plane-609a5ac871aba582929060.jpg",
     },
     {
-        item: "Prada bag, medium leather",
+        item: "Medium sized leather Prada bag",
         price: 2000,
         img: "https://www.prada.com/content/dam/pradabkg_products/1/1BA/1BA434/2CY9F0002/1BA434_2CY9_F0002_V_OBO_SLR.jpg/_jcr_content/renditions/cq5dam.web.hebebed.2400.2400.jpg",
     },
@@ -21,8 +21,8 @@ const products = [
     },
     {
         item: "Lamborgini",
-        price: 300000,
-        img: "",
+        price: 500000,
+        img: "https://cdn.motor1.com/images/mgl/6ZAvXk/s1/lamborghini-invencible.webp",
     },
     {
         item: "Bora Barrier™ Repair Cream",
@@ -61,7 +61,7 @@ const products = [
     },
     {
         item: "Seahawk Yacht",
-        price: 10250000,
+        price: 10000000,
         img: "https://cdn.boatinternational.com/convert/listing/2023/07/65fe7db0-2d1e-11ee-9b1e-dbef54aeb7b2-SEAHAWK_superyacht_for_sale_charter_01.webp/r%5Bheight%5D=350/65fe7db0-2d1e-11ee-9b1e-dbef54aeb7b2-SEAHAWK_superyacht_for_sale_charter_01.webp",
     },
 ]

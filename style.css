@@ -5,13 +5,17 @@
     justify-content: center;
     margin: 1rem;
 }
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
 .form1{
     size: 30vh;
 }
 .card{
-    height: 50vh;
-    width: 35vw;
-    background-color: #ddcbb5;
+    height: 60vh;
+    width: 33vw;
+    background-color: #faf0e4;
     border-radius: 1rem;
     box-shadow: 10px 10px 5px #80775e;
     flex-grow: 3;
@@ -28,15 +32,16 @@
 
 }
 .itemimage{
-    height: 45vh;
-    width: 30vw;
+    height: 400px;
+    width: 450px;
     justify-content: center;
-    margin: auto;
+    margin: 3;
     padding: 1rem;
 }
-#button{
-    background-color: #80775e;
-}
 .result{
-    align-items: center;
+    text-align: center;
+}
+.hideprice{
+    color: transparent;
+    line-height: .1;
 }
