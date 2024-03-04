@@ -13,7 +13,7 @@ h1{
     size: 30vh;
 }
 .card{
-    height: 60vh;
+    height: 50vh;
     width: 33vw;
     background-color: #faf0e4;
     border-radius: 1rem;
@@ -33,7 +33,7 @@ h1{
 }
 .itemimage{
     height: 400px;
-    width: 450px;
+    width: 30vw;
     justify-content: center;
     margin: 3;
     padding: 1rem;
